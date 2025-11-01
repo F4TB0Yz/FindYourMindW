@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación del Proyecto - Sistemas de Información</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100">
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                🧠 FindYourMind
+            </div>
+            <ul class="hidden md:flex gap-8 text-gray-700 font-medium">
+                <li><a href="#inicio" class="hover:text-blue-600 transition">Inicio</a></li>
+                <li><a href="#problema" class="hover:text-blue-600 transition">Problema</a></li>
+                <li><a href="#objetivos" class="hover:text-blue-600 transition">Objetivos</a></li>
+                <li><a href="#cronograma" class="hover:text-blue-600 transition">Cronograma</a></li>
+                <li><a href="#metodologia" class="hover:text-blue-600 transition">Metodología</a></li>
+                <li><a href="#fichas" class="hover:text-blue-600 transition">Fichas</a></li>
+                <li><a href="#contacto" class="hover:text-blue-600 transition">Contacto</a></li>
+            </ul>
+            <button id="menuBtn" class="md:hidden text-gray-700 text-2xl">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-40 pb-32 px-6 text-center animate__animated animate__fadeIn min-h-screen flex items-center justify-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                FindYourMind
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                Herramienta de gestión personal que integra notas, tareas y seguimiento de hábitos para mejorar tu productividad y bienestar mental
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="https://github.com/F4TB0Yz/FindYourMind" target="_blank" class="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-105">
+                    Ver Proyecto Completo
+                </a>
+                <button class="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition">
+                    Descargar Documento
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Planteamiento del Problema -->
+    <section id="problema" class="py-20 px-6 bg-white/50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Planteamiento del Problema</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        En la actualidad, muchas personas enfrentan dificultades para organizar de manera eficiente sus actividades diarias, compromisos académicos, laborales y personales. Aunque existen múltiples herramientas digitales para tomar notas, gestionar tareas o seguir hábitos, estas suelen estar dispersas, lo que genera pérdida de tiempo, desmotivación y dificultad para mantener la coherencia entre metas a corto y largo plazo.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        La falta de una plataforma integral que centralice estas funciones provoca desorganización, procrastinación y sensación de saturación mental. FindYourMind surge como solución para integrar en un solo espacio la toma de notas, la planificación de tareas y el seguimiento de hábitos personales.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3 items-start">
+                            <span class="text-blue-600 font-bold text-xl">✓</span>
+                            <span class="text-gray-700">Dispersión de herramientas digitales causa pérdida de tiempo</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-blue-600 font-bold text-xl">✓</span>
+                            <span class="text-gray-700">Desmotivación por falta de visibilidad del progreso</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-blue-600 font-bold text-xl">✓</span>
+                            <span class="text-gray-700">Necesidad de centralizar gestión de tareas, notas y hábitos</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 text-white shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4">📍 Contexto Actual</h3>
+                    <p class="mb-4">
+                        Los usuarios disponen de múltiples plataformas desconectadas para gestionar diferentes aspectos de su vida personal y profesional.
+                    </p>
+                    <ul class="space-y-3 text-sm">
+                        <li>📱 Notas en una app</li>
+                        <li>✅ Tareas en otra plataforma</li>
+                        <li>📊 Hábitos registrados manualmente</li>
+                        <li>❌ Sin sincronización entre herramientas</li>
+                        <li>😰 Sobrecarga cognitiva y estrés</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Justificación -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">Justificación del Proyecto</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">💡</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Relevancia</h3>
+                    <p class="text-gray-700">La necesidad de mejorar la organización personal y la salud mental es cada vez más relevante en la era digital. Centralizar herramientas reduce la sobrecarga cognitiva.</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Viabilidad</h3>
+                    <p class="text-gray-700">FindYourMind es viable con tecnologías web modernas. Su diseño simple y enfocado permite una implementación realista en el tiempo disponible.</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Innovación</h3>
+                    <p class="text-gray-700">Integra tres funcionalidades clave (notas, tareas, hábitos) en una sola plataforma con interfaz intuitiva, promocionando autogestión y bienestar mental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Objetivos -->
+    <section id="objetivos" class="py-20 px-6 bg-white/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">Objetivos</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-12"></div>
+            
+            <!-- Objetivo General -->
+            <div class="mb-16">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        🎯
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Objetivo General</h3>
+                </div>
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border-l-4 border-blue-600">
+                    <p class="text-lg text-gray-800 leading-relaxed">
+                        Desarrollar una aplicación de gestión personal integrada que combine de manera eficiente funcionalidades para la toma de notas, la organización de tareas y el seguimiento de hábitos, con el fin de mejorar la productividad y el bienestar mental de los usuarios.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Objetivos Específicos -->
+            <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Objetivos Específicos</h3>
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-green-500 hover:shadow-lg transition">
+                        <div class="flex gap-4">
+                            <div class="text-3xl">1️⃣</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Diseñar módulo de notas</h4>
+                                <p class="text-gray-700">Permitir a los usuarios capturar, editar, etiquetar y buscar ideas de forma rápida y sencilla.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-yellow-500 hover:shadow-lg transition">
+                        <div class="flex gap-4">
+                            <div class="text-3xl">2️⃣</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Implementar gestión de tareas</h4>
+                                <p class="text-gray-700">Sistema de creación, categorización, priorización y seguimiento del estado (pendientes, en progreso, completadas).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-orange-500 hover:shadow-lg transition">
+                        <div class="flex gap-4">
+                            <div class="text-3xl">3️⃣</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Desarrollar seguimiento de hábitos</h4>
+                                <p class="text-gray-700">Funcionalidad para registrar, visualizar tiempo transcurrido mediante temporizador e historial de hábitos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-purple-500 hover:shadow-lg transition">
+                        <div class="flex gap-4">
+                            <div class="text-3xl">4️⃣</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Crear sistema de estadísticas</h4>
+                                <p class="text-gray-700">Mostrar progreso general del usuario y motivarlo a mantener sus metas activas con visualización clara de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-pink-500 hover:shadow-lg transition">
+                        <div class="flex gap-4">
+                            <div class="text-3xl">5️⃣</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Diseñar interfaz adaptable</h4>
+                                <p class="text-gray-700">Interface intuitiva que garantice experiencia fluida en dispositivos móviles y navegadores web.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Alcance y Restricciones -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Alcance y Restricciones</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Alcance -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border-2 border-green-200">
+                    <h3 class="text-2xl font-bold text-green-900 mb-6 flex items-center gap-3">
+                        <span class="text-3xl">✅</span> Alcance del Proyecto
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">→</span>
+                            <span class="text-gray-800">Aplicación enfocada en gestión personal</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">→</span>
+                            <span class="text-gray-800">Tres módulos integrados: notas, tareas y hábitos</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">→</span>
+                            <span class="text-gray-800">Interfaz intuitiva de uso fácil</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">→</span>
+                            <span class="text-gray-800">Diseño simple y funcional sin integraciones complejas externas</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">→</span>
+                            <span class="text-gray-800">Prototipo funcional para pruebas reales</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Restricciones -->
+                <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 border-2 border-red-200">
+                    <h3 class="text-2xl font-bold text-red-900 mb-6 flex items-center gap-3">
+                        <span class="text-3xl">⚠️</span> Restricciones
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3 items-start">
+                            <span class="text-red-600 font-bold">•</span>
+                            <span class="text-gray-800">Sin pruebas con usuarios masivos: grupo reducido de estudiantes</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-red-600 font-bold">•</span>
+                            <span class="text-gray-800">Primera versión será prototipo funcional, no app en tiendas oficiales</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-red-600 font-bold">•</span>
+                            <span class="text-gray-800">Tiempo limitado al semestre académico vigente</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-red-600 font-bold">•</span>
+                            <span class="text-gray-800">Desarrollo individual (1 integrante)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Beneficiarios e Impacto -->
+    <section class="py-20 px-6 bg-white/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Beneficiarios e Impacto</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <!-- Beneficiarios -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="text-3xl">👥</span> Público Objetivo
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-blue-100 rounded-lg p-4 border-l-4 border-blue-500">
+                            <h4 class="font-bold text-blue-900">Estudiantes y Profesionales</h4>
+                            <p class="text-blue-800 text-sm mt-2">Personas que buscan mejorar su organización personal y productividad</p>
+                        </div>
+                        <div class="bg-indigo-100 rounded-lg p-4 border-l-4 border-indigo-500">
+                            <h4 class="font-bold text-indigo-900">Usuarios de hábitos y bienestar</h4>
+                            <p class="text-indigo-800 text-sm mt-2">Personas enfocadas en mejorar su calidad de vida personal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impacto -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="text-3xl">⚡</span> Impacto Esperado
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-purple-100 rounded-lg p-4 border-l-4 border-purple-500">
+                            <h4 class="font-bold text-purple-900">Impacto Social</h4>
+                            <p class="text-purple-800 text-sm mt-2">Usuarios más organizados, menos estresados y con mejor calidad de vida</p>
+                        </div>
+                        <div class="bg-pink-100 rounded-lg p-4 border-l-4 border-pink-500">
+                            <h4 class="font-bold text-pink-900">Impacto Productivo</h4>
+                            <p class="text-pink-800 text-sm mt-2">Incremento significativo en eficiencia y efectividad de actividades diarias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impactos adicionales -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl p-6 border-l-4 border-orange-500">
+                    <h4 class="font-bold text-orange-900 mb-2 text-lg">🚀 Impacto Tecnológico</h4>
+                    <p class="text-orange-800">Aplicación que aprovecha las últimas tendencias en desarrollo de software con interfaz moderna y responsive.</p>
+                </div>
+                <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 border-l-4 border-teal-500">
+                    <h4 class="font-bold text-teal-900 mb-2 text-lg">💪 Impacto Personal</h4>
+                    <p class="text-teal-800">Mejora en la motivación individual y mejor manejo del tiempo y recursos personales disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Riesgos -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Riesgos Identificados</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-t-4 border-red-500">
+                    <h3 class="text-lg font-bold text-red-900 mb-4">🔴 Riesgos Identificados</h3>
+                    <ul class="space-y-2 text-sm text-red-800">
+                        <li class="flex gap-2 items-start">
+                            <span class="font-bold">→</span>
+                            <span><strong>Errores en planificación:</strong> Cronograma no se cumpla por mala estimación de tiempo</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="font-bold">→</span>
+                            <span><strong>Mitigación:</strong> Sobreestimación de tiempo (15%), reuniones semanales</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 border-t-4 border-yellow-500">
+                    <h3 class="text-lg font-bold text-yellow-900 mb-4">🟡 Riesgos de Documentación</h3>
+                    <ul class="space-y-2 text-sm text-yellow-800">
+                        <li class="flex gap-2 items-start">
+                            <span class="font-bold">→</span>
+                            <span><strong>Problema:</strong> Informe no en normas APA o poco claro</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="font-bold">→</span>
+                            <span><strong>Mitigación:</strong> Revisión continua, plantilla APA desde inicio</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-t-4 border-green-500">
+                    <h3 class="text-lg font-bold text-green-900 mb-4">🟢 Estrategias de Éxito</h3>
+                    <ul class="space-y-2 text-sm text-green-800">
+                        <li>✓ Comunicación constante del equipo</li>
+                        <li>✓ Testing desde el inicio</li>
+                        <li>✓ Documentación paralela al desarrollo</li>
+                        <li>✓ Feedback temprano de usuarios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Productos y Resultados -->
+    <section class="py-20 px-6 bg-white/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Productos y Resultados</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition border-l-4 border-blue-500">
+                    <div class="flex gap-4 items-start">
+                        <div class="text-4xl">�</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Aplicación Parcialmente Funcional</h3>
+                            <p class="text-gray-700">Desarrollo de una aplicación operativa con al menos una de las funcionalidades planificadas (notas, tareas o hábitos) implementada y funcional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition border-l-4 border-indigo-500">
+                    <div class="flex gap-4 items-start">
+                        <div class="text-4xl">🎯</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Prototipo Usable</h3>
+                            <p class="text-gray-700">Entrega de un prototipo funcional que permita a los usuarios finales realizar pruebas reales, validando flujos de trabajo y recopilando feedback.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition border-l-4 border-purple-500">
+                    <div class="flex gap-4 items-start">
+                        <div class="text-4xl">📊</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Impacto en Productividad</h3>
+                            <p class="text-gray-700">Mejora significativa en la organización personal y reducción del estrés de los usuarios objetivo tras usar la aplicación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Técnicas de Recolección de Datos -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Técnicas de Recolección de Datos</h2>
+            
+            <div class="grid md:grid-cols-1 gap-8">
+                <div class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 border-2 border-cyan-300">
+                    <h3 class="text-xl font-bold text-cyan-900 mb-4">📊 Técnica Principal: Encuesta Estructurada</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-cyan-900 mb-2">Descripción:</h4>
+                            <p class="text-gray-800">Se utilizará una encuesta estructurada en Google Forms por su alcance y facilidad para los usuarios (sin necesidad de login).</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-cyan-900 mb-2">Temas de Recolección:</h4>
+                            <ul class="space-y-2 text-gray-800">
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-cyan-600 font-bold">✓</span>
+                                    <span>Datos demográficos</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-cyan-600 font-bold">✓</span>
+                                    <span>Uso actual de herramientas</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-cyan-600 font-bold">✓</span>
+                                    <span>Organización y productividad</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-cyan-600 font-bold">✓</span>
+                                    <span>Hábitos personales</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-cyan-600 font-bold">✓</span>
+                                    <span>Preferencias sobre app integrada</span>
+                                </li>
+                                <li class="flex gap-2 items-start">
+                                    <span class="text-cyan-600 font-bold">✓</span>
+                                    <span>Actitud y disposición</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-cyan-900 mb-2">Objetivo:</h4>
+                            <p class="text-gray-800">Generar un informe para interpretar datos como información y transformarla en conocimiento clave para el desarrollo del proyecto.</p>
+                        </div>
+                        <div class="bg-white rounded p-4 border-l-4 border-cyan-500">
+                            <h4 class="font-bold text-cyan-900 mb-2">📋 Acceso a la Encuesta:</h4>
+                            <p class="text-gray-800 mb-2">Disponible en el siguiente enlace:</p>
+                            <a href="https://forms.gle/6LSENYzRPLfkWcCQ9" target="_blank" class="inline-block bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">
+                                Responder Encuesta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Cronograma de Actividades / Diagrama Gantt -->
+    <section id="cronograma" class="py-20 px-6 bg-white/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Cronograma de Actividades</h2>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8 overflow-x-auto">
+                <div class="min-w-full">
+                    <div class="mb-4 text-sm text-gray-600 italic">
+                        📅 Diagrama Gantt - Duración del semestre académico
+                    </div>
+                    
+                    <!-- Tabla Gantt -->
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+                                <th class="border p-3 text-left">Módulo/Fase</th>
+                                <th class="border p-3 text-center">Actividad</th>
+                                <th class="border p-3 text-center">Sem 1-2</th>
+                                <th class="border p-3 text-center">Sem 3-4</th>
+                                <th class="border p-3 text-center">Sem 5-6</th>
+                                <th class="border p-3 text-center">Sem 7-8</th>
+                                <th class="border p-3 text-center">Sem 9-10</th>
+                                <th class="border p-3 text-center">Sem 11-16</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-50 bg-blue-50">
+                                <td class="border p-3 font-bold text-blue-900">ANÁLISIS</td>
+                                <td class="border p-3 text-sm">Desarrollar idea y planificación</td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-blue-400 rounded"></div></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border p-3"></td>
+                                <td class="border p-3 text-sm">Recolección de datos y encuestas</td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-blue-400 rounded"></div></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-blue-400 rounded"></div></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-green-50">
+                                <td class="border p-3 font-bold text-green-900">DISEÑO</td>
+                                <td class="border p-3 text-sm">Diseño de arquitectura e interfaz</td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-green-400 rounded"></div></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-green-400 rounded"></div></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-purple-50">
+                                <td class="border p-3 font-bold text-purple-900">DESARROLLO</td>
+                                <td class="border p-3 text-sm">Desarrollo módulo de notas</td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-purple-400 rounded"></div></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-purple-400 rounded"></div></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border p-3"></td>
+                                <td class="border p-3 text-sm">Desarrollo módulo de tareas</td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-purple-400 rounded"></div></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-purple-400 rounded"></div></td>
+                                <td class="border p-3 text-center"></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="border p-3"></td>
+                                <td class="border p-3 text-sm">Desarrollo módulo de hábitos</td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-purple-400 rounded"></div></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-purple-400 rounded"></div></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-orange-50">
+                                <td class="border p-3 font-bold text-orange-900">PRUEBAS</td>
+                                <td class="border p-3 text-sm">Pruebas y validación del sistema</td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-orange-400 rounded"></div></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-orange-400 rounded"></div></td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-red-50">
+                                <td class="border p-3 font-bold text-red-900">DOCUMENTACIÓN</td>
+                                <td class="border p-3 text-sm">Documentación final y presentación</td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"></td>
+                                <td class="border p-3 text-center"><div class="h-6 bg-red-400 rounded"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Metodología -->
+    <section id="metodologia" class="py-20 px-6 bg-white/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Metodología</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition border-l-4 border-blue-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">📋 Técnicas para Caracterizar Procesos</h3>
+                    <p class="text-gray-700 mb-4">Se utilizarán técnicas estructuradas para documentar y analizar los procesos del sistema:</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex gap-2 items-start">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Inventario de procesos</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Ficha de procesos detallada</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Modelo de procesos integrado</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-blue-600 font-bold">✓</span>
+                            <span>Análisis de entrada/salida</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition border-l-4 border-indigo-500">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">🔍 Modelos de Referencia</h3>
+                    <p class="text-gray-700 mb-4">Se aplicarán modelos reconocidos internacionalmente:</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex gap-2 items-start">
+                            <span class="text-indigo-600 font-bold">✓</span>
+                            <span>Modelo Alemán (estándar)</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-indigo-600 font-bold">✓</span>
+                            <span>Modelo Alemán ICONTEC</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-indigo-600 font-bold">✓</span>
+                            <span>Metodología estándar de procesos</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-indigo-600 font-bold">✓</span>
+                            <span>Documentación en formato Excel</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Mapa de Procesos -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Mapa de Procesos</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border-2 border-purple-200">
+                    <h3 class="text-xl font-bold text-purple-900 mb-4">📊 Diagrama de Bloques</h3>
+                    <p class="text-gray-700 mb-6">Estructura general del sistema mostrando los módulos principales y sus interconexiones.</p>
+                    <div class="bg-white rounded-lg p-6 flex justify-center">
+                        <img src="assets/images/diagrama-bloques.png" alt="Diagrama de Bloques" class="max-w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 border-2 border-cyan-200">
+                    <h3 class="text-xl font-bold text-cyan-900 mb-4">🔄 Modelo Integrado - Módulo de Hábitos</h3>
+                    <p class="text-gray-700 mb-6">Integración del módulo de seguimiento de hábitos en la arquitectura general del sistema.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Imagen 1 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/model-integrado-1.png" data-alt="Modelo Integrado 1">
+                            <img src="assets/images/model-integrado-1.png" alt="Modelo Integrado 1" class="w-full h-auto object-contain bg-gray-50">
+                        </div>
+                        
+                        <!-- Imagen 2 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/model-integrado-2.png" data-alt="Modelo Integrado 2">
+                            <img src="assets/images/model-integrado-2.png" alt="Modelo Integrado 2" class="w-full h-auto object-contain bg-gray-50">
+                        </div>
+                        
+                        <!-- Imagen 3 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/model-integrado-3.png" data-alt="Modelo Integrado 3">
+                            <img src="assets/images/model-integrado-3.png" alt="Modelo Integrado 3" class="w-full h-auto object-contain bg-gray-50">
+                        </div>
+                        
+                        <!-- Imagen 4 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/model-integrado-4.png" data-alt="Modelo Integrado 4">
+                            <img src="assets/images/model-integrado-4.png" alt="Modelo Integrado 4" class="w-full h-auto object-contain bg-gray-50">
+                        </div>
+                        
+                        <!-- Imagen 5 -->
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/model-integrado-5.png" data-alt="Modelo Integrado 5">
+                            <img src="assets/images/model-integrado-5.png" alt="Modelo Integrado 5" class="w-full h-auto object-contain bg-gray-50">
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mt-4 text-center italic">Vistas del módulo de hábitos en diferentes pantallas</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border-2 border-green-200">
+                    <h3 class="text-xl font-bold text-green-900 mb-4">📈 Cadena de Valor</h3>
+                    <p class="text-gray-700 mb-4">Análisis de la cadena de valor mostrando cómo cada proceso agrega valor al usuario final.</p>
+                    <div class="flex justify-center">
+                        <img src="assets/images/cadena-valor.png" alt="Cadena de Valor" class="w-full h-auto object-contain max-w-4xl">
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl p-8 border-2 border-orange-200">
+                    <h3 class="text-xl font-bold text-orange-900 mb-4">🇩🇪 Modelo Alemán</h3>
+                    <p class="text-gray-700 mb-4">Aplicación del modelo alemán para la caracterización y documentación de procesos.</p>
+                    <div class="flex justify-center">
+                        <img src="assets/images/modelo-aleman.png" alt="Modelo Alemán" class="w-full h-auto object-contain max-w-4xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Técnicas para Caracterizar Procesos -->
+    <section id="tecnicas" class="py-20 px-6 bg-gradient-to-b from-purple-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Técnicas para Caracterizar Procesos</h2>
+            
+            <div class="space-y-8">
+                <!-- Gestión de Hábitos -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-purple-500">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-6">Gestión de Hábitos</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <tbody class="space-y-4">
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">1. Nombre del proceso</td>
+                                    <td class="text-gray-700 py-3">Gestión de Hábitos – Sistema integral para crear, actualizar, seguir y sincronizar hábitos personales del usuario.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">2.1 Responsable</td>
+                                    <td class="text-gray-700 py-3">HabitsProvider – Gestor principal del estado y lógica de hábitos.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">2.2 Objetivo</td>
+                                    <td class="text-gray-700 py-3">Permitir a los usuarios crear, gestionar y dar seguimiento a sus hábitos diarios de manera eficiente, con sincronización automática entre dispositivos.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">2.3 Alcance</td>
+                                    <td class="text-gray-700 py-3">Comprende desde la creación de un hábito hasta su seguimiento, actualización, eliminación y sincronización en la nube. Incluye la gestión del progreso diario y visualización de estadísticas.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">3. Procedimientos</td>
+                                    <td class="text-gray-700 py-3">
+                                        <span class="font-semibold">Actividades que contribuyen a la transformación:</span>
+                                        <ul class="list-disc list-inside space-y-1 mt-2 ml-2">
+                                            <li><strong>Creación:</strong> CreateHabitUseCase – Registrar nuevo hábito en SQLite y Supabase.</li>
+                                            <li><strong>Ejecución:</strong> IncrementHabitProgressUseCase / DecrementHabitProgressUseCase.</li>
+                                            <li><strong>Verificación:</strong> loadHabits() – Cargar y validar datos desde repositorio.</li>
+                                            <li><strong>Retroalimentación:</strong> refreshHabitsFromLocal() – Actualizar UI con datos locales.</li>
+                                            <li><strong>Corrección:</strong> UpdateHabitUseCase – Modificar hábitos existentes.</li>
+                                            <li><strong>Acciones correctivas:</strong> SyncProvider – Resolver conflictos de sincronización.</li>
+                                            <li><strong>Acciones preventivas:</strong> Validación de datos antes de guardar.</li>
+                                            <li><strong>Acciones de mejora:</strong> Optimización de consultas SQL y cache local.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">4. Proveedores</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Supabase: Proveedor de backend cloud para autenticación y almacenamiento.</li>
+                                            <li>SQLite: Base de datos local para persistencia offline.</li>
+                                            <li>DependencyInjection: Proveedor de casos de uso y repositorios.</li>
+                                            <li>Usuario: Datos de entrada (nombre, objetivo, progreso).</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">5. Entradas</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Datos del hábito: nombre, descripción, objetivo diario, categoría.</li>
+                                            <li>Acciones del usuario: clicks en botones de incremento/decremento.</li>
+                                            <li>Eventos de sincronización: triggers automáticos o manuales.</li>
+                                            <li>Estado de sesión: información del usuario autenticado.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">6. Salidas</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Lista de hábitos: colección actualizada de hábitos del usuario.</li>
+                                            <li>Progreso actualizado: contador de días/actividades completadas.</li>
+                                            <li>Confirmaciones: mensajes de éxito/error en operaciones CRUD.</li>
+                                            <li>Datos sincronizados: hábitos actualizados en cloud y local.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">7. Cliente</td>
+                                    <td class="text-gray-700 py-3">Usuario de la aplicación FindYourMind – Persona que busca mejorar su bienestar mental mediante el seguimiento de hábitos saludables.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">8. Recursos</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li><strong>Hardware:</strong> Dispositivo móvil (Android).</li>
+                                            <li><strong>Software:</strong> Flutter SDK, Supabase Client, SQLite, Provider package.</li>
+                                            <li><strong>Humanos:</strong> Desarrollador.</li>
+                                            <li><strong>Datos:</strong> Base de datos local (SQLite) + Base de datos cloud (Supabase).</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold text-purple-700 py-3 pr-4 align-top w-32">9. Controles</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Validaciones de entrada: campos obligatorios, límites de caracteres.</li>
+                                            <li>Control de sesión: verificación de usuario autenticado.</li>
+                                            <li>Verificaciones: estado de conexión a internet antes de sincronizar.</li>
+                                            <li>Documentación: comentarios en código y documentación técnica.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Autenticación de Usuarios -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-indigo-500">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6">Autenticación de Usuarios</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <tbody class="space-y-4">
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">1. Nombre del proceso</td>
+                                    <td class="text-gray-700 py-3">Autenticación de Usuarios – Registro e inicio de sesión seguro.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">2.1 Responsable</td>
+                                    <td class="text-gray-700 py-3">Supabase Auth + RegisterScreen/LoginScreen.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">2.2 Objetivo</td>
+                                    <td class="text-gray-700 py-3">Garantizar acceso seguro a la aplicación mediante autenticación de usuarios.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">2.3 Alcance</td>
+                                    <td class="text-gray-700 py-3">Desde el registro de nuevo usuario hasta el mantenimiento de sesión activa.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">3. Procedimientos</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li><strong>Registro:</strong> Crear cuenta con email y password.</li>
+                                            <li><strong>Login:</strong> Validar credenciales con Supabase.</li>
+                                            <li><strong>Verificación:</strong> Validar formato de email y fortaleza de contraseña.</li>
+                                            <li><strong>Corrección:</strong> Recuperación de contraseña (si implementado).</li>
+                                            <li><strong>Sesión:</strong> Mantener token de autenticación activo.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">4. Proveedores</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Supabase Auth: Servicio de autenticación.</li>
+                                            <li>SupabaseConfig: Configuración de credenciales.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">5. Entradas</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Email del usuario.</li>
+                                            <li>Contraseña.</li>
+                                            <li>Datos de perfil (nombre, etc.).</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">6. Salidas</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Token de sesión.</li>
+                                            <li>Datos del usuario autenticado.</li>
+                                            <li>Confirmación de registro/login exitoso.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">7. Cliente</td>
+                                    <td class="text-gray-700 py-3">Usuario nuevo o existente de FindYourMind.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">8. Recursos</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Supabase Cloud.</li>
+                                            <li>Flutter Forms.</li>
+                                            <li>Validadores de entrada.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold text-indigo-700 py-3 pr-4 align-top w-32">9. Controles</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Validación de formato de email.</li>
+                                            <li>Requisitos de contraseña segura.</li>
+                                            <li>Manejo de errores de autenticación.</li>
+                                            <li>Timeout de sesión.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Inventario de Procesos -->
+    <section class="py-20 px-6 bg-white/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Inventario de Procesos</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse bg-white rounded-lg shadow-md">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Tipo</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Código</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Nombre del Proceso</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Objetivo</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Responsable</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Alcance</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <!-- ESTRATÉGICOS -->
+                        <tr class="bg-blue-50 hover:bg-blue-100 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-bold text-blue-700">ESTRATÉGICOS</td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-blue-600">E</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-blue-700">E-01</td>
+                            <td class="border border-gray-300 px-4 py-3">Planificación Estratégica</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Definir objetivos y roadmap de la aplicación</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Felipe Duarte</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Definición de funcionalidades y arquitectura</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-blue-600">E</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-blue-700">E-02</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Configuración</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Administrar variables de entorno y configuración del sistema</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Felipe Duarte</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Configuración de .env, Supabase, dependencias</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-blue-600">E</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-blue-700">E-03</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Calidad</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Garantizar estándares de código y buenas prácticas</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Felipe Duarte</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Code review, testing, documentación</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-blue-600">E</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-blue-700">E-04</td>
+                            <td class="border border-gray-300 px-4 py-3">Arquitectura de Software</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Diseñar y mantener la arquitectura del sistema</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Felipe Duarte</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Clean Architecture, DDD, patrones de diseño</td>
+                        </tr>
+
+                        <!-- MISIONALES / OPERATIVOS -->
+                        <tr class="bg-green-50 hover:bg-green-100 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-bold text-green-700">MISIONALES / OPERATIVOS</td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-green-600">M</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-green-700">M-01</td>
+                            <td class="border border-gray-300 px-4 py-3">Autenticación de Usuarios</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Registrar y autenticar usuarios en la aplicación</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Supabase Auth + LoginScreen</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Registro, login, gestión de sesiones</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-green-600">M</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-green-700">M-02</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Hábitos</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Crear, actualizar, eliminar y consultar hábitos</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">HabitsProvider</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">CRUD completo de hábitos</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-green-600">M</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-green-700">M-03</td>
+                            <td class="border border-gray-300 px-4 py-3">Seguimiento de Progreso</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Registrar y visualizar el progreso diario de hábitos</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">HabitsProvider</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Incremento / decremento de progreso</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-green-600">M</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-green-700">M-04</td>
+                            <td class="border border-gray-300 px-4 py-3">Sincronización de Datos</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Sincronizar datos entre dispositivos y nube</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">SyncProvider</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Sync bidireccional cloud-local</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-green-600">M</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-green-700">M-05</td>
+                            <td class="border border-gray-300 px-4 py-3">Visualización de Estadísticas</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Mostrar reportes y gráficos de cumplimiento</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">HabitsScreen</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Dashboard de métricas y progreso</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-green-600">M</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-green-700">M-06</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Perfil</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Administrar información del usuario</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">ProfileScreen (futuro)</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Datos personales, preferencias</td>
+                        </tr>
+
+                        <!-- APOYO -->
+                        <tr class="bg-orange-50 hover:bg-orange-100 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-bold text-orange-700">APOYO</td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-01</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Base de Datos Local</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Administrar persistencia local con SQLite</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">DatabaseHelper</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">CRUD en SQLite, migraciones</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-02</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Repositorio</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Implementar patrón Repository para acceso a datos</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">HabitRepositoryImpl</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Abstracción de acceso a datos</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-03</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Estado</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Administrar estado reactivo de la aplicación</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Provider (múltiples)</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">State management con Provider</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-04</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Navegación</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Controlar navegación entre pantallas</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">ScreensProvider</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Router y transiciones</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-05</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Tema Visual</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Administrar tema claro / oscuro</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">ThemeProvider</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Personalización visual</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-06</td>
+                            <td class="border border-gray-300 px-4 py-3">Inyección de Dependencias</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Proveer dependencias a toda la aplicación</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">DependencyInjection</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Singleton de casos de uso</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-07</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Interfaz de Usuario</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Crear y mantener componentes UI reutilizables</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Widgets compartidos</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">CustomAppBar, CustomBottomBar, etc.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-08</td>
+                            <td class="border border-gray-300 px-4 py-3">Gestión de Validaciones</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Validar datos de entrada del usuario</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Validators</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Formularios, campos, reglas de negocio</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 text-center font-semibold text-orange-600">A</td>
+                            <td class="border border-gray-300 px-4 py-3 font-mono text-orange-700">A-09</td>
+                            <td class="border border-gray-300 px-4 py-3">Manejo de Errores</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Gestionar excepciones y errores del sistema</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Exception Handlers</td>
+                            <td class="border border-gray-300 px-4 py-3 text-sm">Try-catch, mensajes de error</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Fichas de Procesos -->
+    <section id="fichas" class="py-20 px-6 bg-gradient-to-b from-blue-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Fichas de Procesos</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Ficha 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/ficha_procesos-1.png" data-alt="Ficha de Procesos 1">
+                    <img src="assets/images/ficha_procesos-1.png" alt="Ficha de Procesos 1" class="w-full h-auto object-contain bg-gray-50">
+                </div>
+                
+                <!-- Ficha 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/ficha_procesos-2.png" data-alt="Ficha de Procesos 2">
+                    <img src="assets/images/ficha_procesos-2.png" alt="Ficha de Procesos 2" class="w-full h-auto object-contain bg-gray-50">
+                </div>
+                
+                <!-- Ficha 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery" data-image="assets/images/ficha_procesos-3.png" data-alt="Ficha de Procesos 3">
+                    <img src="assets/images/ficha_procesos-3.png" alt="Ficha de Procesos 3" class="w-full h-auto object-contain bg-gray-50">
+                </div>
+            </div>
+            
+            <p class="text-sm text-gray-600 mt-8 text-center italic">Documentación detallada de los procesos principales con estándar de modelo alemán - Haz clic para ampliar</p>
+        </div>
+    </section>
+
+    <!-- Sección: Modelo de Procesos -->
+    <section class="py-20 px-6 bg-gradient-to-b from-white to-purple-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Modelo de Procesos</h2>
+            
+            <div class="flex justify-center">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2 cursor-pointer image-gallery max-w-4xl w-full" data-image="assets/images/modelo_procesos.png" data-alt="Modelo de Procesos">
+                    <img src="assets/images/modelo_procesos.png" alt="Modelo de Procesos" class="w-full h-auto object-contain bg-gray-50 p-4">
+                </div>
+            </div>
+            
+            <p class="text-sm text-gray-600 mt-8 text-center italic">Diagrama completo del modelo de procesos - Haz clic para ampliar</p>
+        </div>
+    </section>
+
+    <!-- Sección: Modelo Alemán ICONTEC -->
+    <section class="py-20 px-6 bg-gradient-to-b from-purple-50 to-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Modelo Alemán ICONTEC</h2>
+            
+            <div class="space-y-8">
+                <!-- Información General del Proceso -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-purple-500">
+                    <h3 class="text-2xl font-bold text-purple-900 mb-6">1. Información General del Proceso</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <tbody class="space-y-4">
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Nombre del Proceso</td>
+                                    <td class="text-gray-700 py-3">Gestión de Hábitos</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Líder</td>
+                                    <td class="text-gray-700 py-3">HabitsProvider</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Participantes</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>CreateHabitUseCase</li>
+                                            <li>UpdateHabitUseCase</li>
+                                            <li>DeleteHabitUseCase</li>
+                                            <li>IncrementProgressUseCase</li>
+                                            <li>DecrementProgressUseCase</li>
+                                            <li>HabitRepositoryImpl</li>
+                                            <li>SyncProvider</li>
+                                            <li>DatabaseHelper</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Objeto</td>
+                                    <td class="text-gray-700 py-3">Permitir a los usuarios crear, actualizar, eliminar y dar seguimiento a sus hábitos personales de manera eficiente, con sincronización automática entre dispositivos para mejorar su bienestar mental.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Alcance</td>
+                                    <td class="text-gray-700 py-3">Comprende desde la creación de un hábito hasta su seguimiento, actualización, eliminación y sincronización en la nube. Incluye la gestión del progreso diario y visualización de estadísticas. Aplica para: Usuarios autenticados de FindYourMind, Hábitos personales del usuario, Dispositivos Android.</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Entradas</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Datos del hábito (nombre, descripción, objetivo diario, categoría)</li>
+                                            <li>Acciones del usuario (crear, editar, eliminar, incrementar, decrementar)</li>
+                                            <li>Estado de sesión del usuario autenticado</li>
+                                            <li>Eventos de sincronización (automáticos o manuales)</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Actividad de Seguimiento y Control</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Validación de datos de entrada</li>
+                                            <li>Verificación de usuario autenticado</li>
+                                            <li>Logs de operaciones CRUD</li>
+                                            <li>Monitoreo de sincronización</li>
+                                            <li>Control de errores y excepciones</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Salidas</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Lista de hábitos actualizada</li>
+                                            <li>Confirmación de operación (éxito/error)</li>
+                                            <li>Progreso actualizado en tiempo real</li>
+                                            <li>Datos sincronizados en todos los dispositivos</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Proveedores</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Usuario de la aplicación (datos de entrada)</li>
+                                            <li>Supabase Cloud (almacenamiento remoto)</li>
+                                            <li>SQLite (almacenamiento local)</li>
+                                            <li>DependencyInjection (casos de uso)</li>
+                                            <li>Flutter SDK (framework)</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Indicadores</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Progreso diario completado</li>
+                                            <li>Tasa de sincronización exitosa</li>
+                                            <li>Errores de sincronización</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Clientes</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Usuario de FindYourMind</li>
+                                            <li>Usuario que busca mejorar su bienestar mental</li>
+                                            <li>Usuario que accede desde múltiples dispositivos</li>
+                                            <li>Usuario que requiere seguimiento de hábitos offline</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Requisitos</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Usuario autenticado en Supabase</li>
+                                            <li>Conexión a internet para sincronización</li>
+                                            <li>Almacenamiento local disponible (SQLite)</li>
+                                            <li>Permisos de lectura/escritura</li>
+                                            <li>Flutter SDK instalado</li>
+                                            <li>Dependencias configuradas (.env)</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Documentos</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Requerimientos Funcionales</li>
+                                            <li>Requerimientos No Funcionales</li>
+                                            <li>Diagramas</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold text-purple-700 py-3 pr-4 w-32 align-top">Registros</td>
+                                    <td class="text-gray-700 py-3">
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Base de datos SQLite local</li>
+                                            <li>Base de datos Supabase Cloud</li>
+                                            <li>Logs de operaciones CRUD</li>
+                                            <li>Logs de sincronización</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Flujograma -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-indigo-500">
+                    <h3 class="text-2xl font-bold text-indigo-900 mb-6">2. Flujograma del Proceso</h3>
+                    <div class="flex justify-center">
+                        <div class="bg-gray-50 rounded-lg overflow-hidden shadow cursor-pointer image-gallery" data-image="assets/images/flujograma.png" data-alt="Flujograma de Gestión de Hábitos">
+                            <img src="assets/images/flujograma.png" alt="Flujograma de Gestión de Hábitos" class="w-full h-auto object-contain p-4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control de Registros -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-6">3. Control de Registros</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse text-sm">
+                            <thead>
+                                <tr class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-bold">Registro</th>
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-bold">Responsable</th>
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-bold">Almacenamiento</th>
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-bold">Tiempo de Retención</th>
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-bold">Disposición Final</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-300 px-4 py-3">Base de datos SQLite local</td>
+                                    <td class="border border-gray-300 px-4 py-3">DatabaseHelper</td>
+                                    <td class="border border-gray-300 px-4 py-3">Dispositivo local del usuario</td>
+                                    <td class="border border-gray-300 px-4 py-3">Mientras la app esté instalada</td>
+                                    <td class="border border-gray-300 px-4 py-3">Eliminación al desinstalar</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-300 px-4 py-3">Base de datos Supabase Cloud</td>
+                                    <td class="border border-gray-300 px-4 py-3">Supabase + SyncProvider</td>
+                                    <td class="border border-gray-300 px-4 py-3">Servidor Supabase</td>
+                                    <td class="border border-gray-300 px-4 py-3">Mientras el usuario tenga cuenta activa</td>
+                                    <td class="border border-gray-300 px-4 py-3">Eliminación al eliminar cuenta</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-300 px-4 py-3">Logs de operaciones</td>
+                                    <td class="border border-gray-300 px-4 py-3">HabitsProvider</td>
+                                    <td class="border border-gray-300 px-4 py-3">Consola de desarrollo</td>
+                                    <td class="border border-gray-300 px-4 py-3">Durante sesión de desarrollo</td>
+                                    <td class="border border-gray-300 px-4 py-3">No persistente</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="border border-gray-300 px-4 py-3">Logs de sincronización</td>
+                                    <td class="border border-gray-300 px-4 py-3">SyncProvider</td>
+                                    <td class="border border-gray-300 px-4 py-3">Archivo local</td>
+                                    <td class="border border-gray-300 px-4 py-3">7 días</td>
+                                    <td class="border border-gray-300 px-4 py-3">Sobrescritura rotativa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Criterios de Aceptación -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-green-500">
+                    <h3 class="text-2xl font-bold text-green-900 mb-6">4. Criterios de Aceptación</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>El hábito debe tener un nombre único por usuario</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>El objetivo diario debe ser un número positivo</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>La sincronización debe completarse en menos de 3 segundos</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Los datos deben persistir localmente para acceso offline</span>
+                        </li>
+                        <li class="flex gap-3 items-start">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>La UI debe actualizarse inmediatamente tras cualquier operación</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Definiciones -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-orange-500">
+                    <h3 class="text-2xl font-bold text-orange-900 mb-6">5. Definiciones</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <tbody class="space-y-4">
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-orange-700 py-3 pr-4 w-40 align-top">Hábito</td>
+                                    <td class="text-gray-700 py-3">Actividad repetitiva que el usuario desea rastrear diariamente para mejorar su bienestar mental</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-orange-700 py-3 pr-4 w-40 align-top">Progreso</td>
+                                    <td class="text-gray-700 py-3">Contador que indica cuántas veces el usuario ha completado el hábito en un período determinado</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-orange-700 py-3 pr-4 w-40 align-top">Sincronización</td>
+                                    <td class="text-gray-700 py-3">Proceso de mantener coherentes los datos entre el almacenamiento local (SQLite) y la nube (Supabase)</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-orange-700 py-3 pr-4 w-40 align-top">UseCase</td>
+                                    <td class="text-gray-700 py-3">Caso de uso que encapsula la lógica de negocio específica (patrón Clean Architecture)</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-orange-700 py-3 pr-4 w-40 align-top">Provider</td>
+                                    <td class="text-gray-700 py-3">Gestor de estado reactivo que notifica cambios a la UI (patrón Observer)</td>
+                                </tr>
+                                <tr class="border-b border-gray-200">
+                                    <td class="font-bold text-orange-700 py-3 pr-4 w-40 align-top">Repository</td>
+                                    <td class="text-gray-700 py-3">Patrón de diseño que abstrae el acceso a datos de diferentes fuentes</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold text-orange-700 py-3 pr-4 w-40 align-top">CRUD</td>
+                                    <td class="text-gray-700 py-3">Create, Read, Update, Delete - operaciones básicas sobre datos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Acciones Correctivas, Preventivas y de Mejora -->
+                <div class="bg-white rounded-xl p-8 shadow-md border-l-4 border-red-500">
+                    <h3 class="text-2xl font-bold text-red-900 mb-6">6. Acciones Correctivas, Preventivas y de Mejora</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Correctivas -->
+                        <div>
+                            <h4 class="text-lg font-bold text-red-700 mb-4">Acciones Correctivas (cuando algo falla):</h4>
+                            <div class="space-y-3">
+                                <div class="bg-red-50 p-4 rounded border-l-4 border-red-500">
+                                    <p class="font-semibold text-red-900 mb-2">Fallo de sincronización:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li><strong>Acción:</strong> Retry automático con backoff</li>
+                                        <li><strong>Responsable:</strong> SyncProvider</li>
+                                        <li><strong>Plazo:</strong> Inmediato (3 intentos)</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-red-50 p-4 rounded border-l-4 border-red-500">
+                                    <p class="font-semibold text-red-900 mb-2">Error en operación CRUD:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li><strong>Acción:</strong> Rollback de transacción, mostrar mensaje de error al usuario</li>
+                                        <li><strong>Responsable:</strong> HabitRepositoryImpl</li>
+                                        <li><strong>Plazo:</strong> Inmediato</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-red-50 p-4 rounded border-l-4 border-red-500">
+                                    <p class="font-semibold text-red-900 mb-2">Datos corruptos en SQLite:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li><strong>Acción:</strong> Restaurar desde Supabase, notificar al usuario</li>
+                                        <li><strong>Responsable:</strong> DatabaseHelper</li>
+                                        <li><strong>Plazo:</strong> Al detectar inconsistencia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Preventivas -->
+                        <div>
+                            <h4 class="text-lg font-bold text-yellow-700 mb-4">Acciones Preventivas (para evitar problemas):</h4>
+                            <div class="space-y-3">
+                                <div class="bg-yellow-50 p-4 rounded border-l-4 border-yellow-500">
+                                    <p class="font-semibold text-yellow-900 mb-2">Validación de datos antes de guardar:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>Implementar validadores en formularios</li>
+                                        <li><strong>Responsable:</strong> NewHabitProvider</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-yellow-50 p-4 rounded border-l-4 border-yellow-500">
+                                    <p class="font-semibold text-yellow-900 mb-2">Backup automático antes de sincronización:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>Guardar copia temporal antes de sync</li>
+                                        <li><strong>Responsable:</strong> SyncProvider</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-yellow-50 p-4 rounded border-l-4 border-yellow-500">
+                                    <p class="font-semibold text-yellow-900 mb-2">Manejo robusto de excepciones:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>Try-catch en todas las operaciones críticas</li>
+                                        <li><strong>Responsable:</strong> Todos los UseCases</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mejora -->
+                        <div>
+                            <h4 class="text-lg font-bold text-blue-700 mb-4">Acciones de Mejora (optimización continua):</h4>
+                            <div class="space-y-3">
+                                <div class="bg-blue-50 p-4 rounded border-l-4 border-blue-500">
+                                    <p class="font-semibold text-blue-900 mb-2">Optimización de consultas SQL:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>Crear índices en columnas frecuentemente consultadas</li>
+                                        <li><strong>Responsable:</strong> DatabaseHelper</li>
+                                        <li><strong>Plazo:</strong> Sprint 3</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded border-l-4 border-blue-500">
+                                    <p class="font-semibold text-blue-900 mb-2">Implementación de caché local:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>Reducir consultas a BD mediante caché en memoria</li>
+                                        <li><strong>Responsable:</strong> HabitsProvider</li>
+                                        <li><strong>Plazo:</strong> Sprint 3</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-blue-50 p-4 rounded border-l-4 border-blue-500">
+                                    <p class="font-semibold text-blue-900 mb-2">Analytics de uso:</p>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>Implementar tracking de acciones del usuario</li>
+                                        <li><strong>Responsable:</strong> Equipo de desarrollo</li>
+                                        <li><strong>Plazo:</strong> Sprint 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Modelo a Seguir para la Caracterización del Proyecto de Formación -->
+    <section class="py-20 px-6 bg-gradient-to-b from-white to-teal-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Modelo a Seguir para la Caracterización del Proyecto de Formación</h2>
+            
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <p class="text-gray-700 text-lg mb-8 text-center">A continuación se presenta el modelo estructurado para la caracterización completa del proyecto FindYourMind, incluyendo todos los procesos, documentación y lineamientos implementados:</p>
+                
+                <div class="flex justify-center">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md cursor-pointer image-gallery" data-image="assets/images/gestion-habitos.png" data-alt="Modelo de Gestión de Hábitos">
+                        <img src="assets/images/gestion-habitos.png" alt="Modelo de Gestión de Hábitos" class="w-full h-auto object-contain p-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Requerimientos -->
+    <section class="py-20 px-6 bg-white/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Requerimientos</h2>
+            
+            <div class="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-600">
+                <div class="flex items-center justify-between mb-8">
+                    <div class="flex items-center gap-4">
+                        <div class="text-4xl">📄</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Documento IEEE 830</h3>
+                            <p class="text-gray-600">Especificación de Requerimientos del Software - FindYourMind</p>
+                        </div>
+                    </div>
+                    <button id="openPdfBtn" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h3.586L9.293 9.293a1 1 0 000 1.414 1 1 0 001.414 0L16 6.414V10a1 1 0 102 0V4a1 1 0 00-1-1h-6z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                        Ver Documento
+                    </button>
+                </div>
+                
+                <div class="flex gap-4 justify-center">
+                    <a href="assets/docs/requerimientos_formato_ieee830.pdf" download class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        Descargar PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ver PDF -->
+    <div id="pdfModal" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center hidden p-4" onclick="if(event.target === event.currentTarget) document.getElementById('pdfModal').classList.add('hidden')">
+        <div class="bg-white rounded-xl shadow-2xl w-full h-full max-w-5xl max-h-full flex flex-col">
+            <!-- Header del Modal -->
+            <div class="flex justify-between items-center p-6 border-b border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-900">Documento IEEE 830</h3>
+                <button onclick="document.getElementById('pdfModal').classList.add('hidden')" class="text-gray-500 hover:text-gray-700 transition">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            
+            <!-- Contenedor del PDF -->
+            <div class="flex-1 overflow-auto">
+                <embed src="assets/docs/requerimientos_formato_ieee830.pdf" type="application/pdf" class="w-full h-full" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección: UML -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Diagramas UML</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border-2 border-blue-300">
+                    <h3 class="text-xl font-bold text-blue-900 mb-4">👥 Diagrama de Casos de Uso</h3>
+                    <p class="text-gray-700 mb-4">Interacciones entre actores y el sistema, mostrando todos los casos de uso principales.</p>
+                    
+                    <!-- Imagen del diagrama -->
+                    <div class="mb-6 cursor-pointer image-gallery rounded-lg overflow-hidden shadow hover:shadow-lg transition" data-image="assets/images/diagrama_casos_de_uso.png" data-alt="Diagrama de Casos de Uso">
+                        <img src="assets/images/diagrama_casos_de_uso.png" alt="Diagrama de Casos de Uso" class="w-full h-auto object-contain p-2 bg-white">
+                    </div>
+                    
+                    <!-- Botones de acciones -->
+                    <div class="flex flex-col gap-3">
+                        <button id="openUseCasesDocBtn" class="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h3.586L9.293 9.293a1 1 0 000 1.414 1 1 0 001.414 0L16 6.414V10a1 1 0 102 0V4a1 1 0 00-1-1h-6z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                            Ver Documento Excel
+                        </button>
+                        <a href="assets/docs/todos_casos_de_uso.xlsx" download class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-semibold transition text-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            Descargar Excel
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border-2 border-purple-300">
+                    <h3 class="text-xl font-bold text-purple-900 mb-4">📞 Diagrama de Comunicación</h3>
+                    <p class="text-gray-700 mb-4">Interacciones y comunicación entre objetos, mostrando mensajes y secuencias de interacción.</p>
+                    
+                    <!-- Imagen del diagrama -->
+                    <div class="cursor-pointer image-gallery rounded-lg overflow-hidden shadow hover:shadow-lg transition" data-image="assets/images/diagrama de comunicacion.png" data-alt="Diagrama de Comunicación">
+                        <img src="assets/images/diagrama de comunicacion.png" alt="Diagrama de Comunicación" class="w-full h-auto object-contain p-2 bg-white">
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border-2 border-green-300">
+                    <h3 class="text-xl font-bold text-green-900 mb-4">🔄 Diagrama de Secuencia</h3>
+                    <p class="text-gray-700 mb-4">Interacciones entre objetos en el tiempo, mostrando el flujo de mensajes entre componentes.</p>
+                    
+                    <!-- Imagen del diagrama -->
+                    <div class="cursor-pointer image-gallery rounded-lg overflow-hidden shadow hover:shadow-lg transition" data-image="assets/images/diagrama de secuencia.png" data-alt="Diagrama de Secuencia">
+                        <img src="assets/images/diagrama de secuencia.png" alt="Diagrama de Secuencia" class="w-full h-auto object-contain p-2 bg-white">
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl p-8 border-2 border-orange-300">
+                    <h3 class="text-xl font-bold text-orange-900 mb-4">📊 Diagrama de Actividades</h3>
+                    <p class="text-gray-700 mb-4">Flujo de actividades y decisiones en los procesos principales de la aplicación.</p>
+                    
+                    <!-- Imagen del diagrama -->
+                    <div class="cursor-pointer image-gallery rounded-lg overflow-hidden shadow hover:shadow-lg transition" data-image="assets/images/diagrama_actividades.png" data-alt="Diagrama de Actividades">
+                        <img src="assets/images/diagrama_actividades.png" alt="Diagrama de Actividades" class="w-full h-auto object-contain p-2 bg-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section id="contacto" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">Contáctanos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">📧</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Email del Proyecto</h3>
+                    <p class="text-gray-700">Disponible para consultas</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🏫</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Institución</h3>
+                    <p class="text-gray-700">Universidad / Institución Educativa</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">📝</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Encuesta</h3>
+                    <p class="text-gray-700 mb-3">Participa en nuestra investigación</p>
+                    <a href="https://forms.gle/6LSENYzRPLfkWcCQ9" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition text-sm font-semibold">
+                        Responder Encuesta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ver documento Excel de Casos de Uso -->
+    <div id="useCasesModal" class="fixed inset-0 bg-black/70 z-50 flex items-center justify-center hidden p-4" onclick="if(event.target === event.currentTarget) document.getElementById('useCasesModal').classList.add('hidden')">
+        <div class="bg-white rounded-xl shadow-2xl w-full h-full max-w-5xl max-h-full flex flex-col">
+            <!-- Header del Modal -->
+            <div class="flex justify-between items-center p-6 border-b border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-900">Casos de Uso - Documento Excel</h3>
+                <button onclick="document.getElementById('useCasesModal').classList.add('hidden'); document.body.style.overflow = 'auto';" class="text-gray-500 hover:text-gray-700 transition">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            
+            <!-- Contenedor del documento -->
+            <div class="flex-1 overflow-auto p-6 bg-gray-50">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR0EH-J-7JZ-7Z7Z7Z7Z7Z7Z7Z/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
+            </div>
+            
+            <!-- Footer del Modal -->
+            <div class="p-6 border-t border-gray-200 bg-white flex gap-4 justify-center">
+                <a href="assets/docs/todos_casos_de_uso.xlsx" download class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    Descargar Excel
+                </a>
+                <button onclick="document.getElementById('useCasesModal').classList.add('hidden'); document.body.style.overflow = 'auto';" class="inline-flex items-center gap-2 bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">🧠 FindYourMind</h3>
+                    <p class="text-gray-400">Herramienta integrada de gestión personal para mejorar productividad y bienestar mental</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="#problema" class="hover:text-white transition">Problema</a></li>
+                        <li><a href="#objetivos" class="hover:text-white transition">Objetivos</a></li>
+                        <li><a href="#cronograma" class="hover:text-white transition">Cronograma</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Información</h3>
+                    <p class="text-gray-400 text-sm">
+                        Proyecto académico desarrollado para la materia "Sistemas de Información" en el semestre actual.
+                    </p>
+                    <p class="text-gray-500 text-xs mt-4">© 2025 FindYourMind - Todos los derechos reservados</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>Diseñado con ❤️ para mejorar la organización personal y el bienestar mental</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para imagen ampliada -->
+    <div id="imageModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onclick="closeImageModal(event)">
+        <div class="bg-white rounded-lg animate-in fade-in zoom-in duration-300 relative flex flex-col" style="max-width: 90vw; max-height: 90vh;" onclick="event.stopPropagation()">
+            <button onclick="closeImageModal()" class="absolute -top-3 -right-3 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold transition shadow-lg">✕</button>
+            <img id="modalImage" src="" alt="" class="w-auto h-auto max-w-[80vw] max-h-[80vh] object-contain">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
