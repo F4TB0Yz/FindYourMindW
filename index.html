@@ -39,12 +39,12 @@
             </div>
             <ul class="hidden md:flex gap-8 text-gray-700 font-medium">
                 <li><a href="#inicio" class="hover:text-blue-600 transition">Inicio</a></li>
-                <li><a href="#problema" class="hover:text-blue-600 transition">Problema</a></li>
-                <li><a href="#objetivos" class="hover:text-blue-600 transition">Objetivos</a></li>
+                <li><a href="#resumen" class="hover:text-blue-600 transition">Resumen</a></li>
+                <li><a href="#requerimientos" class="hover:text-blue-600 transition">Requerimientos</a></li>
+                <li><a href="#mapa-procesos" class="hover:text-blue-600 transition">Mapa</a></li>
+                <li><a href="#uml" class="hover:text-blue-600 transition">UML</a></li>
                 <li><a href="#cronograma" class="hover:text-blue-600 transition">Cronograma</a></li>
-                <li><a href="#metodologia" class="hover:text-blue-600 transition">Metodología</a></li>
                 <li><a href="#fichas" class="hover:text-blue-600 transition">Fichas</a></li>
-                <li><a href="#contacto" class="hover:text-blue-600 transition">Contacto</a></li>
             </ul>
             <button id="menuBtn" class="md:hidden text-gray-700 text-2xl">☰</button>
         </div>
@@ -66,6 +66,113 @@
                 <button class="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition">
                     Descargar Documento
                 </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Acceso Rápido -->
+    <section class="py-16 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Resumen Ejecutivo -->
+                <a href="#resumen" class="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-300 hover:shadow-xl hover:scale-105 transition transform">
+                    <div class="text-4xl mb-3">📋</div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Resumen Ejecutivo</h3>
+                    <p class="text-sm text-blue-700">Visión general del proyecto</p>
+                </a>
+
+                <!-- Requerimientos Funcionales -->
+                <a href="#requerimientos" class="group bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-300 hover:shadow-xl hover:scale-105 transition transform">
+                    <div class="text-4xl mb-3">✅</div>
+                    <h3 class="text-lg font-bold text-green-900 mb-2">Requerimientos</h3>
+                    <p class="text-sm text-green-700">Funcionales del sistema</p>
+                </a>
+
+                <!-- Mapa de Procesos -->
+                <a href="#mapa-procesos" class="group bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-300 hover:shadow-xl hover:scale-105 transition transform">
+                    <div class="text-4xl mb-3">🗺️</div>
+                    <h3 class="text-lg font-bold text-purple-900 mb-2">Mapa de Procesos</h3>
+                    <p class="text-sm text-purple-700">Estructura y flujos</p>
+                </a>
+
+                <!-- UML -->
+                <a href="#uml" class="group bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 border-2 border-orange-300 hover:shadow-xl hover:scale-105 transition transform">
+                    <div class="text-4xl mb-3">📐</div>
+                    <h3 class="text-lg font-bold text-orange-900 mb-2">UML</h3>
+                    <p class="text-sm text-orange-700">Diagramas del sistema</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Resumen Ejecutivo -->
+    <section id="resumen" class="py-16 px-6 bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Resumen Ejecutivo</h2>
+                <div class="w-20 h-1 bg-white/50 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Actividad de la empresa -->
+                <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm border border-white/20">
+                    <h3 class="font-bold mb-2 flex items-center gap-2">
+                        <span class="text-2xl">🎯</span> <span>Actividad</span>
+                    </h3>
+                    <p class="text-sm text-white/85 leading-relaxed">
+                        Aplicación para mejorar bienestar y gestión personal mediante notas, tareas y seguimiento de hábitos en un solo espacio.
+                    </p>
+                </div>
+
+                <!-- Oportunidad de Negocio -->
+                <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm border border-white/20">
+                    <h3 class="font-bold mb-2 flex items-center gap-2">
+                        <span class="text-2xl">💡</span> <span>Oportunidad</span>
+                    </h3>
+                    <p class="text-sm text-white/85 leading-relaxed">
+                        Creciente demanda de soluciones integrales para gestión de tiempo, hábitos y salud mental con interfaz simple.
+                    </p>
+                </div>
+
+                <!-- Diferenciación -->
+                <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm border border-white/20">
+                    <h3 class="font-bold mb-2 flex items-center gap-2">
+                        <span class="text-2xl">⭐</span> <span>Diferenciación</span>
+                    </h3>
+                    <p class="text-sm text-white/85 leading-relaxed">
+                        Interfaz intuitiva con 3 módulos integrados, fácil de usar vs plataformas complicadas.
+                    </p>
+                </div>
+
+                <!-- Equipo -->
+                <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm border border-white/20">
+                    <h3 class="font-bold mb-2 flex items-center gap-2">
+                        <span class="text-2xl">👤</span> <span>Equipo</span>
+                    </h3>
+                    <p class="text-sm text-white/85 leading-relaxed">
+                        Estudiante con expertise en programación, datos y sistemas de información.
+                    </p>
+                </div>
+
+                <!-- Clientes Objetivo -->
+                <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm border border-white/20">
+                    <h3 class="font-bold mb-2 flex items-center gap-2">
+                        <span class="text-2xl">👥</span> <span>Clientes</span>
+                    </h3>
+                    <p class="text-sm text-white/85 leading-relaxed">
+                        Estudiantes, profesionales y personas interesadas en mejorar su productividad.
+                    </p>
+                </div>
+
+                <!-- Objetivos -->
+                <div class="bg-white/10 rounded-lg p-5 backdrop-blur-sm border border-white/20">
+                    <h3 class="font-bold mb-2 flex items-center gap-2">
+                        <span class="text-2xl">🚀</span> <span>Objetivos</span>
+                    </h3>
+                    <p class="text-sm text-white/85 leading-relaxed">
+                        Escalar regionalmente, desarrollar nuevas funcionalidades y personalización.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -641,7 +748,7 @@
     </section>
 
     <!-- Sección: Mapa de Procesos -->
-    <section class="py-20 px-6">
+    <section id="mapa-procesos" class="py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Mapa de Procesos</h2>
             
@@ -1535,7 +1642,7 @@
     </section>
 
     <!-- Sección: Requerimientos -->
-    <section class="py-20 px-6 bg-white/50">
+    <section id="requerimientos" class="py-20 px-6 bg-white/50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Requerimientos</h2>
             
@@ -1583,7 +1690,7 @@
     </div>
 
     <!-- Sección: UML -->
-    <section class="py-20 px-6">
+    <section id="uml" class="py-20 px-6">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Diagramas UML</h2>
             
